@@ -1,0 +1,115 @@
+.section {
+  background: var(--color-bg-section);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 0 0 32px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+  max-width: 200px;
+}
+
+.dot {
+  flex: 1;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background: #ddd;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.dotActive {
+  background: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navHint {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin-right: 4px;
+}
+
+.navBtn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.navBtn:hover {
+  background: var(--color-primary-hover);
+}
+
+@media (max-width: 540px) {
+  .navHint {
+    display: none;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
