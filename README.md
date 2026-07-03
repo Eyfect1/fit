@@ -1,6 +1,6 @@
 # Cайт посвященный фитнесу
 
-Реплика трёх экранов лендинга [usmanovafit.gymteam.ru/mainpage](https://usmanovafit.gymteam.ru/mainpage), собранная с помощью **Cursor** (вайбкодинг).
+Реплика трёх экранов лендинга [usmanovafit.gymteam.ru/mainpage](https://usmanovafit.gymteam.ru/mainpage).
 
 ## Что реализовано
 
